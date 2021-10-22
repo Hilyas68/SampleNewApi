@@ -45,4 +45,15 @@ public class ArticleController {
 
         return ResponseEntity.ok(response);
     }
+
+//    @GetMapping("/articles/{id}")
+//    public ResponseEntity<Article> getArticles(int id){
+//
+//        Article article = service.findById(id);
+//        if(article == null){
+//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//        }
+//
+//        return new ResponseEntity<>(article, null,  HttpStatus.NO_CONTENT);
+//    }
 }

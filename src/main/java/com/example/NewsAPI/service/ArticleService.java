@@ -112,7 +112,7 @@ public class ArticleService {
                     response.setStatusMessage(Constant.NOT_PERMITED);
                     return response;
                 }
-            }else {
+            } else {
                 response.setStatusMessage(Constant.NOT_FOUND);
                 return response;
             }
