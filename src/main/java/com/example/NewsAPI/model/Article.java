@@ -36,4 +36,10 @@ public class Article {
 
     public Article() {
     }
+
+    public Article(String title, String headline, String content) {
+        this.title = title;
+        this.headline = headline;
+        this.content = content;
+    }
 }

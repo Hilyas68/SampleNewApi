@@ -17,10 +17,11 @@ public class NewsApiApplication {
 		SpringApplication.run(NewsApiApplication.class, args);
 	}
 
-//	@Bean
-//    CommandLineRunner runner(){
-//        return args -> {
-//            authorRepository.save(new Author("hassan","h@gmail.com","Profession...","$2a$04$KNLUwOWHVQZVpXyMBNc7JOzbLiBjb9Tk9bP7KNcPI12ICuvzXQQKG"));
-//        };
-    //}
+	@Bean
+    CommandLineRunner runner(){
+        return args -> {
+			if(!authorRepository.existsByEmail("h@gmail.com"))
+            	authorRepository.save(new Author("hassan","h@gmail.com","Profession...","$2a$04$KNLUwOWHVQZVpXyMBNc7JOzbLiBjb9Tk9bP7KNcPI12ICuvzXQQKG"));
+        };
+    }
 }
